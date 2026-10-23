@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f6fa;
+    color: #07152b;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    height: 94px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    padding-top: 170px;
+}
+
+.logo {
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d1d6df;
+}
+
+h1 {
+    margin-top: 48px;
+    margin-bottom: 50px;
+    font-size: 52px;
+    letter-spacing: -2px;
+}
+
+h1 span {
+    color: #294bd7;
+}
+
+label {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.search-box {
+    height: 87px;
+    display: flex;
+    border: 2px solid #294bd7;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.search-icon {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #5f6875;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 21px;
+}
+
+button {
+    width: 165px;
+    border: none;
+    background: #294bd7;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.or {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.tags div {
+    background: #e1e7f8;
+    padding: 13px 24px;
+    border-radius: 25px;
+    font-family: monospace;
+    font-size: 19px;
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    background: #f4f6fa;
+    text-align: center;
+    color: #30405a;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer strong {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.footer a {
+    color: #30405a;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 700px) {
+    .top-bar {
+        height: 70px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 70px 20px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .search-box {
+        height: 65px;
+    }
+
+    button {
+        width: 100px;
+        font-size: 17px;
+    }
+}
